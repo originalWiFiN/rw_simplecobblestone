@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Granite -->
+  <RecipeDef>
+    <defName>MakeCobblestoneGranite</defName>
+    <label>make granite cobblestone</label>
+    <description>Chip granite chunks into rough cobblestones.</description>
+    <jobString>Chipping granite cobblestones...</jobString>
+    <workAmount>800</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkGranite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+        <CobblestoneGranite>4</CobblestoneGranite>
+    </products>
+  </RecipeDef>
+  <!-- Marble -->
+  <RecipeDef>
+    <defName>MakeCobblestoneMarble</defName>
+    <label>make marble cobblestone</label>
+    <description>Chip marble chunks into rough cobblestones.</description>
+    <jobString>Chipping marble cobblestones...</jobString>
+    <workAmount>800</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkMarble</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+        <CobblestoneMarble>4</CobblestoneMarble>
+    </products>
+  </RecipeDef>
+  <!-- Limestone -->
+  <RecipeDef>
+    <defName>MakeCobblestoneLimestone</defName>
+    <label>make limestone cobblestone</label>
+    <description>Chip limestone chunks into rough cobblestones.</description>
+    <jobString>Chipping limestone cobblestones...</jobString>
+    <workAmount>800</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkLimestone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+        <CobblestoneLimestone>4</CobblestoneLimestone>
+    </products>
+  </RecipeDef>
+  <!-- Slate -->
+  <RecipeDef>
+    <defName>MakeCobblestoneSlate</defName>
+    <label>make slate cobblestone</label>
+    <description>Chip slate chunks into rough cobblestones.</description>
+    <jobString>Chipping slate cobblestones...</jobString>
+    <workAmount>800</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkSlate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+        <CobblestoneSlate>4</CobblestoneSlate>
+    </products>
+  </RecipeDef>
+  <!-- Sandstone -->
+  <RecipeDef>
+    <defName>MakeCobblestoneSandstone</defName>
+    <label>make sandstone cobblestone</label>
+    <description>Chip sandstone chunks into rough cobblestones.</description>
+    <jobString>Chipping sandstone cobblestones...</jobString>
+    <workAmount>800</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkSandstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+        <CobblestoneSandstone>10</CobblestoneSandstone>
+    </products>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>MakeMixedCobblestone</defName>
+    <label>combine mixed cobblestone</label>
+    <description>Mix assorted cobblestones into a single pile of construction-grade rough stone.</description>
+    <jobString>Mixing cobblestones...</jobString>
+    <workAmount>200</workAmount>
+    <workSkill>Crafting</workSkill>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CobblestoneGranite</li>
+            <li>CobblestoneSlate</li>
+            <li>CobblestoneSandstone</li>
+            <li>CobblestoneLimestone</li>
+            <li>CobblestoneMarble</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+        <CobblestoneMixed>10</CobblestoneMixed>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>Make_BlocksVitrifiedStoneFromCobble</defName>
+		<label>make vitrified stone blocks from cobblestone</label>
+		<description>Smelt cobblestone into vitrified stone blocks.</description>
+		<effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+          <li>ElectricSmelter</li>
+        </recipeUsers>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Cobblestone</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksVitrifiedStone>10</BlocksVitrifiedStone>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_BlocksVitrifiedStoneFromBlocks</defName>
+		<label>make vitrified stone blocks from stone blocks</label>
+		<description>Smelt assorted stone blocks into vitrified stone blocks.</description>
+		<effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<workAmount>600</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+          <li>ElectricSmelter</li>
+        </recipeUsers>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+				  <categories>
+					<li>StoneBlocks</li>
+				  </categories>
+				  <disallowedThingDefs>
+					<li>BlocksVitrifiedStone</li>
+				  </disallowedThingDefs>
+        	    </filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksVitrifiedStone>20</BlocksVitrifiedStone>
+		</products>
+	</RecipeDef>
+</Defs>

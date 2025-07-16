@@ -1,0 +1,9 @@
+<ModMetaData>
+  <name>Simply Cobblestone</name>
+  <author>WiFiN</author>
+  <packageId>WiFiN.SimplyCobblestone</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  <description>Adds low tech recipes for cobblestone walls/floors. For when you have too many chunks and not enough patience.</description>
+</ModMetaData>

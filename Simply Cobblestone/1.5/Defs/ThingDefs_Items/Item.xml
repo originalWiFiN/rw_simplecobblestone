@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StuffCategoryDef>
+    <defName>Cobblestone</defName>
+    <label>cobble</label>
+  </StuffCategoryDef>
+  
+  <ThingDef Name="CobblestoneBase" ParentName="ResourceBase" Abstract="True">
+	<description>Roughly chipped stones fit for primitive masonry.</description>
+    <thingCategories>
+      <li>Cobblestone</li>
+    </thingCategories>
+	<stuffProps>
+      <categories>
+        <li>Cobblestone</li>
+      </categories>
+	  <commonality>0.20</commonality>
+    </stuffProps>
+	<tradeability>Buyable</tradeability>
+    <statBases>
+      <MarketValue>0.7</MarketValue>
+      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+      <Beauty>-1</Beauty>
+      <Mass>1</Mass>
+    </statBases>
+    <stackLimit>75</stackLimit>
+	<graphicData>
+	  <texPath>Things/Item/Resource/CobblestoneResource</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <ThingDef ParentName="CobblestoneBase">
+    <defName>CobblestoneSandstone</defName>
+    <label>sandstone cobble</label>
+    <graphicData>
+      <color>(126,104,94)</color>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="CobblestoneBase">
+    <defName>CobblestoneGranite</defName>
+    <label>granite cobble</label>
+    <graphicData>
+      <color>(105,95,97)</color>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="CobblestoneBase">
+    <defName>CobblestoneLimestone</defName>
+    <label>limestone cobble</label>
+    <graphicData>
+      <color>(158,153,135)</color>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="CobblestoneBase">
+    <defName>CobblestoneSlate</defName>
+    <label>slate cobble</label>
+    <graphicData>
+      <color>(70,70,70)</color>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="CobblestoneBase">
+    <defName>CobblestoneMarble</defName>
+    <label>marble cobble</label>
+    <graphicData>
+	  <color>(132,135,132)</color>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="CobblestoneBase">
+    <defName>CobblestoneMixed</defName>
+    <label>mixed cobble</label>
+    <graphicData>
+      <texPath>Things/Item/Resource/CobblestoneMixedResource</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(206, 191, 169)</color>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksVitrifiedStone</defName>
+    <label>vitrified stone blocks</label>
+    <description>Stone blocks made by smelting cobblestone.</description>
+    <graphicData>
+      <color>(206, 191, 169)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(206, 191, 169)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>vitrified stone</stuffAdjective>
+      <statFactors>
+		<Beauty>-1</Beauty>
+        <MaxHitPoints>0.8</MaxHitPoints>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+</Defs>

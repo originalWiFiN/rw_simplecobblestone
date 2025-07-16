@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>CobblestoneFloors</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="CobblestoneFloor">
+    <renderPrecedence>250</renderPrecedence>
+    <description>A walkable surface made from stones, laid in a rough but solid pattern.</description>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <texturePath>Terrain/Surfaces/CobblestoneFloor</texturePath>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-0.2</Cleanliness>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+	<designatorDropdown>CobblestoneFloors</designatorDropdown>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CobblestoneFloor">
+    <defName>CobblestoneFloorSandstone</defName>
+    <label>sandstone cobblestone</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <CobblestoneSandstone>4</CobblestoneSandstone>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="CobblestoneFloor">
+    <defName>CobblestoneFloorGranite</defName>
+    <label>granite cobblestone</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <CobblestoneGranite>4</CobblestoneGranite>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="CobblestoneFloor">
+    <defName>CobblestoneFloorLimestone</defName>
+    <label>limestone cobblestone</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <CobblestoneLimestone>4</CobblestoneLimestone>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="CobblestoneFloor">
+    <defName>CobblestoneFloorSlate</defName>
+    <label>slate cobblestone</label>
+    <color>(70,70,70)</color>
+    <costList>
+      <CobblestoneSlate>4</CobblestoneSlate>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="CobblestoneFloor">
+    <defName>CobblestoneFloorMarble</defName>
+    <label>marble cobblestone</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <CobblestoneMarble>4</CobblestoneMarble>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="CobblestoneFloor">
+    <defName>CobblestoneFloorMixed</defName>
+    <label>mixed cobblestone</label>
+    <color>(206, 191, 169)</color>
+    <costList>
+      <CobblestoneMixed>4</CobblestoneMixed>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileStoneBase">
+        <defName>TileVitrifiedStone</defName>
+        <label>vitrified stone tile</label>
+        <color>(206, 191, 169)</color>
+        <costList>
+            <BlocksVitrifiedStone>4</BlocksVitrifiedStone>
+        </costList>
+    </TerrainDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>Cobblestone</defName>
+    <label>cobblestone</label>
+    <parent>ResourcesRaw</parent>
+	<iconPath>Things/Item/Resource/CobblestoneResource_c</iconPath>
+  </ThingCategoryDef>
+</Defs>
